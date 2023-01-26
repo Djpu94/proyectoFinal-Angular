@@ -1,0 +1,9 @@
+<div class="m-4">
+    <div class="card" style="width: 300px;">
+        <img [src]="card.image" class="card-img-top" alt="Sample Image">
+        <div class="card-body text-center">
+            <h5 class="card-title">{{card.name}}</h5>
+            <a class="btn btn-primary" (click)="characterDetail(card.id)" >Detalles</a>
+        </div>
+    </div>
+</div>

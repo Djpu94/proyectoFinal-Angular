@@ -1,0 +1,22 @@
+<div class="modal-header">
+    <h4 class="modal-title pull-left">{{character.name}}</h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="card">
+        <img [src]="character.image" class="card-img-top" [alt]="character.name">
+        <div class="card-body">
+          <p class="card-text">
+            <strong>status:</strong> &nbsp; {{character.status}} <br>
+            <strong>species:</strong> &nbsp; {{character.species}} <br>
+            <strong>gender:</strong> &nbsp; {{character.gender}} <br>
+            <strong>origin:</strong> &nbsp; {{character.origin.name}} <br>
+            <strong>location:</strong> {{character.location.name}} <br>
+          </p>
+        </div>
+      </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" (click)="bsModalRef.hide()"><i class="bi bi-x-lg"> Cerrar</i></button>
+  </div>
